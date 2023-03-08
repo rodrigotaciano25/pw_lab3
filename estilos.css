@@ -1,0 +1,141 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: dodgerblue;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.relative img {
+    position: relative;
+    width: 100%;
+}
+
+.relative p {
+    font-weight: bolder;
+    font-size: x-large;
+    position: absolute;
+    left: 2%;
+    top: 55%;
+    color: darkblue;
+}
+
+.cidades {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 50px;
+}
+
+.cidades > div {
+    height: 88px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px grey;
+    margin: 10px;
+}
+
+.cidades > div > div img {
+    border-radius: 10px 0 0 10px;
+}
+
+.cidades > div > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cidades div div:last-child {
+width: 100px;
+text-align: center;
+}
+
+#circulos{
+    display: flex;
+    justify-content: space-around;
+}
+
+#circulo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circulo2 img {
+    clip-path: circle(38% at center);
+    object-fit: cover;
+}
+
+#circulo3 {
+    width: 100%;
+    position: absolute;
+    height: 100px;
+}
+
+#circulo31 {
+    top: 130px  ;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: blue;
+    z-index: 2;
+}
+
+#circulo32 {
+    top: 115px;
+    left: 15px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: black;
+    z-index: 0;
+}
+
+#circulo33 {
+    top: 100px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red ;
+    z-index: 3;
+}
+
+header {
+    position: sticky;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    text-align: left;
+}
+
+header a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    background-color: lightgrey;
+}
+
+#circulos h2 {
+    text-align: center;
+}
